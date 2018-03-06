@@ -1,0 +1,12 @@
+body {
+    font-family:sans-serif;
+    background-color:blanchedalmond
+}
+
+a,li {
+    color:Red;
+}
+
+a:visited {
+    color:Purple;
+}
