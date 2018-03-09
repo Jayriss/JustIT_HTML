@@ -9,39 +9,77 @@
 . CSS links
 . Scripts (javascript) -->
 
+    <link href="External/css/normalize.css" rel="stylesheet" type="text/css" /> <!-- Reset -->
+
+    <!-- Google Maps API CDN -->
+    <script src="http://maps.google.com/maps/api/js"></script>
+
+    <!-- animate.css CDN -->
+    <link href="External/css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- WOW.js Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- CDN for font awesome -->
+
+    <!-- Google font from the official site  -->
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lovers+Quarrel">
+
+
+    <!-- Google font from the official site  -->
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Mukta">
+
 
     <meta charset="utf-8"> <!-- charset can be used as you can implement the use of symbols such as !"£ -->
 
     <!-- My CSS -->
     <link href="Resources/css/main.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
 
     <!-- ============ HOME SECTION ============ -->
 
-    <section id="Home">
-        <header>
-            <div class="logo">
-                <a href="#home"><img src="Resources/img/logo.png"/></a>
-            </div>
+    <section id="home">
+        <video class="my_video" autoplay loop>
+            <source src="Resources/video/homeVideo.mp4" type="video/mp4">
+            Video not supported by your browser
+        </video>
+        <header class="header_C">
     <!-- ====== Navigation section STARTS ====== -->
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Sales</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> <!-- Icon cart button -->
-                </ul>
-            </nav>
+            <div class="navigation">
+                <span class="nav_button">&#9776;</span>
+                <nav>
+                    <ul id="mainMenu" class="menu_items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">View Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <!-- ====== Navigation section ENDS ====== -->
+
+            <div class="cart_icon">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
         </header>
-     <!-- ====== Navigation section ENDS ====== -->
-        <h1>Exclusive<br />Trainers</h1>
-        <button>New Arrivals</button>
-        <h3>Limited Edition</h3>
+
+        <div class="logo animated fadeIn">
+                <a href="#home"><img src="Resources/img/logo.png" alt="Company Logo" /></a>
+        </div>
+        <h1 class="slogan wow slideInRight">Exclusive<br />Trainers</h1>
+        <div class="action_button">
+            <button class="new_collection_B">New Arrivals</button>
+        </div>
+        <h3 class="main_heading wow slideInLeft" data-wow-delay="0.5s">Limited Edition</h3>
         <a href="#"><i class="fa fa-hand-o-right"></i></a>
     </section>
 
@@ -50,69 +88,102 @@
     <!-- ============ PRODUCTS SECTION ============ -->
 
 
-    <section id="Products">
+    <section id="Products" class="container">
         <h1>Products</h1>
-        <p> All the best trainers and collections are exclusive here!<br /><br />
+        <p class="product_text"> All the best trainers and collections are exclusive here!<br /><br />
 
         All prices seen below are exclusive to this site!</p>
 
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/blackpuma.jpg" alt="Puma Suede Classic Trainers In Black">
-                <figcaption>Puma Suede Classic Trainers In Black </figcaption><strong>£62.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/originaladidas.jpg" alt="Adidas Originals X_PLR Trainers In Grey">
-                <figcaption>Adidas Originals X_PLR Trainers In Grey </figcaption><strong>£80.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/khakinike.jpg" alt="Nike Roshe Premium Trainers In Khaki">
-                <figcaption>Nike Roshe Premium Trainers In Khaki </figcaption><strong>£70.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/lightgreylacoste.jpg" alt="Lacoste Spirit 317 Trainers In Light Grey And Pearl Copper">
-                <figcaption>Lacoste Spirit 317 Trainers In Light Grey And Pearl Copper </figcaption><strong>£77.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/pullandbear.jpg" alt="Pull &amp; Bear Trainers With Stripes In White">
-                <figcaption>Pull &amp; Bear Trainers With Stripes In White </figcaption><strong>£27.99</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/slipdenin.jpg" alt="ASOS Slip On Plimsolls In Denim With Splatter Print">
-                <figcaption>ASOS Slip On Plimsolls In Denim With Splatter Print </figcaption><strong>£50.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/whiteadidas.jpg" alt="Adidas Originals EQT Support Advance Trainers In White">
-                <figcaption>Adidas Originals EQT Support Advance Trainers In White </figcaption><strong>£100.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
-        <article>
-            <figure>
-                <img src="Resources/featuredProducts/whiteconverse.jpg" alt="Converse All Star High Top White Trainers">
-                <figcaption>Converse All Star High Top White Trainers </figcaption><strong>£50.00</strong>
-            </figure>
-            <button><a href="">Add to cart</a></button>
-        </article>
+        <div class="all_trainers">
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/blackpuma.jpg" alt="Puma Suede Classic Trainers In Black">
+                    <figcaption class="p_detail">Puma Suede Classic Trainers In Black </figcaption><strong>£62.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/originaladidas.jpg" alt="Adidas Originals X_PLR Trainers In Grey">
+                    <figcaption class="p_detail">Adidas Originals X_PLR Trainers In Grey </figcaption><strong>£80.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/khakinike.jpg" alt="Nike Roshe Premium Trainers In Khaki">
+                    <figcaption class="p_detail">Nike Roshe Premium Trainers In Khaki </figcaption><strong>£70.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/lightgreylacoste.jpg" alt="Lacoste Spirit 317 Trainers In Light Grey And Pearl Copper">
+                    <figcaption class="p_detail">Lacoste Spirit 317 Trainers In Light Grey And Pearl Copper </figcaption><strong>£77.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/pullandbear.jpg" alt="Pull &amp; Bear Trainers With Stripes In White">
+                    <figcaption class="p_detail">Pull &amp; Bear Trainers With Stripes In White </figcaption><strong>£27.99</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/slipdenin.jpg" alt="ASOS Slip On Plimsolls In Denim With Splatter Print">
+                    <figcaption class="p_detail">ASOS Slip On Plimsolls In Denim With Splatter Print </figcaption><strong>£50.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/whiteadidas.jpg" alt="Adidas Originals EQT Support Advance Trainers In White">
+                    <figcaption class="p_detail">Adidas Originals EQT Support Advance Trainers In White </figcaption><strong>£100.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+            <article class="product_box">
+                <figure>
+                    <img src="Resources/featuredProducts/whiteconverse.jpg" alt="Converse All Star High Top White Trainers">
+                    <figcaption class="p_detail">Converse All Star High Top White Trainers </figcaption><strong>£50.00</strong>
+                </figure>
+                <button class="add_to_cart"><a href="">Add to cart</a></button>
+            </article>
+        </div>
     </section>
+
+<!--	====================
+             About
+=========================	-->
+
+    <section>
+        <h1> About </h1>
+        <p>A brief description of our company and all the services that it offers</p>
+        <video controls autoplay loop class="vid" poster="Resources/img/videoScreen.png">
+            <source src="Resources/video/trainersOriginal.mp4" type="video/mp4">
+        </video>
+        <p>At Luminere we provide..........................................................</p>
+    </section>
+
+<!-- ========================
+      CONTACT US SECTION
+==========================-->
+    <section>
+        <div>
+            <h1>Contact Us</h1>
+            <p>Get in touch with us via e-mail or phone. We can also be found directly at the below address.</p>
+        </div>
+        <div id="map">
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="Resources/js/gmaps.js"></script>
+
+    <script src="Resources/js/myJS.js"></script>
 
 </body>
 </html>

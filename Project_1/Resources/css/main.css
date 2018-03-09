@@ -1,12 +1,373 @@
+/* ================================= */
+
+/* THIS WEBSITE IS FOR TRAINING ONLY */
+
+/* ================================= */
+
+
+
+/* ================================= */
+
+/* WEBSITE COLOUR THEME */
+
+/* ================================= */
+
+/* Primary colour - #b79af6; //purple for navigation links
+Secondary colour - #352650; //darker purple
+Third colour - #c8b1fa; //lighter purple */
+
+/* ==================================
+MOBILE DEFAULT LAYOUT - GLOBAL STYLES
+=====================================*/
+
+html {
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+
+/* Universal */
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+/* Embedded fonts */
+
+@font-face {
+    font-family: '28_days';
+    src: url(../external/font/28_days_later_webfont.tff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+ img, video {
+    width: 100%;
+}
+
 body {
-    font-family:sans-serif;
-    background-color:blanchedalmond
+    font-family: serif;
+    font-size: 16px;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-a,li {
-    color:Red;
+/* ================================= */
+/* HOME STYLES  */
+/* ================================= */
+
+#home {
+    position: relative;
+    background-image: url(../img/trainerHomePage.jpg);
+    background-position: center 0;
+    background-size: cover;
+    /* height: auto; */
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-a:visited {
-    color:Purple;
+.header_C {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 100px;
+    z-index: 1;
+}
+
+h1 {
+    color: #190019;
+    text-shadow: 2px 2px 7px #9f2091
+}
+
+.navigation {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    background-color: #7848e0;
+}
+
+.menu_items {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav li a {
+    color: #ffffff;
+    text-align: right;
+    display: block;
+    padding: 15px 10px 15px 0px;
+}
+
+.cart_icon {
+    position: absolute;
+    top: 15px;
+    left: 50vw;
+    width: 50px;
+    z-index: 2;
+}
+.fa-shopping-cart {
+    color: #4b0082;
+    font-size: 2em;
+}
+
+/* This is the code for the 3-line bar menu */
+.nav_button {
+    font-size: 2.5em;
+    display: block;
+    cursor: pointer;
+    padding: 7px 3%;
+    text-align: center;
+    margin: 0 5vw 0 75vw;
+    width: 20%;
+}
+
+.new_collection_B {
+    color: #fff;
+    border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+    cursor: pointer;
+    background-color: rgba(53, 38, 80, 0.5);
+    margin: 10px auto 0 auto;
+    padding: 15px 20px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.main_heading {
+    font-family: "Lovers Quarrel", cursive, sans-serif;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    color: #fff;
+    margin: 45vh auto 0 auto;
+}
+
+.slogan {
+    font-family: '28_days';
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: right;
+    color: #fff;
+    padding: 200px 4vw 0 0;
+}
+
+.my_video {
+    display: none;
+}
+
+
+/* ================================= */
+/* PRODUCT SECTION */
+/* ================================= */
+
+h1 {
+
+    font-size: 1.5em;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.product_text {
+
+    text-align: center;
+}
+
+.add_to_cart {
+
+    padding: 15px 20px;
+    display: block;
+    background-color: #352650;
+    border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+    border: 1px solid #100b1a;
+}
+
+.add_to_cart a {
+
+    color: #fff;
+}
+
+figure {
+    cursor: pointer;
+    margin: 0;
+}
+
+.price{
+
+    display: block;
+}
+
+.product_box {
+    margin: 1%;
+    width: 230px;
+    padding: 0 25px;
+}
+
+/* Here we are demonstrating the flexbox wrap property */
+.all_trainers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+/* ============================
+      CONTACT US SECTION
+============================ */
+
+#map {
+    width: 100%;
+    height: 450px;
+}
+
+/* TABLET SCREEN STYLES - 768px SCREEN RESOLUTION */
+
+@media screen and (min-width: 768px) {
+    .p_detail {
+        padding 0px;
+        height: 50px;
+        margin-bottom 10px;
+    }
+
+    .slogan {
+        padding 200px 2vw 0 0;
+        margin: 0;
+    }
+}
+
+/* DESKTOP SCREEN STYLES - 1024px SCREEN RESOLUTION */
+
+@media screen and (min-width: 1024px) {
+    .navigation {
+        text-align: right;
+        border-bottom: none;
+        padding: 10px 0;
+    }
+    .menu_items, .fa hand-o-right {
+    display: inline;
+    }
+
+    .cart_icon, .nav_button {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 6vh;
+        left: 3vw;
+        z-index: 10;
+        width: 200px
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    nav li a {
+        border: none;
+    }
+
+    nav a {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+
+    nav a:hover {
+        color: #ff03a8;
+    }
+
+    .menu_items, .menu_items a, .menu_items li{
+        display: inline;
+        padding: 0 20px;
+        margin: 0 5px;
+    }
+
+    .menu_items a {
+        text-align: center;
+        width: 10%
+    }
+
+    .menu_items li {
+        border-right: none;
+    }
+
+    .action_button {
+        position: absolute;
+        top: 75vh;
+        left: 3vw;
+}
+    .main_heading {
+        position: absolute;
+        top: 40vh;
+        left: 3vh;
+        z-index: 1;
+    }
+
+    .slogan {
+        position: absolute;
+        font-size: 3em;
+        top: 35vh;
+        right: 8vw;
+    }
+
+/* DESKTOP SCREEN STYLES - 1280px SCREEN RESOLUTION */
+
+}
+
+@media screen and (min-width: 1280px) {
+    #home {
+        background-image: none;
+        overflow: hidden;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    }
+
+    .my_video {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        z-index: -1;
+    }
+
 }
