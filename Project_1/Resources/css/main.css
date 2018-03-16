@@ -50,10 +50,15 @@ a {
 /* Embedded fonts */
 
 @font-face {
+/*
     font-family: '28_days';
-    src: url(../external/font/28_days_later_webfont.tff);
+    src:  url(../../External/fonts/28_days_later-webfont.eot) format ("embedded-opentype"),
+        url(../../External/fonts/28_days_later-webfont.woff2) format ("woff2"),
+        url(../../External/fonts/28_days_later-webfont.woff) format ("woff"),
+        url(../../External/fonts/28_days_later-webfont.tff) format ("ttf)";
     font-weight: normal;
     font-style: normal;
+*/
 }
 
  img, video {
@@ -196,7 +201,7 @@ nav li a {
 h1 {
 
     font-size: 1.5em;
-    font-family: 'Mukta', sans-serif;
+    font-family: '28_days', sans-serif;
     text-align: center;
     font-weight: lighter;
 }
